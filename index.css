@@ -4,24 +4,28 @@
     color: aliceblue;
 }
 nav{
-    margin:30px;
-    height: 50px;
+    margin-top: 20px;
+    height: 55px;
     background-color:  #242582;
-    border: 3px solid #f6b54c;
-    border-radius: 25px;
-    color: aliceblue;
+    color: rgba(240, 248, 255, 0.438);
+    box-shadow:0px 6px 8px rgba(21, 21, 21, 0.337);
     
 }
+
 .logo{
-    margin-left: 2vw;
+    margin-left: 3vw;
      border-radius: 30px;
     float: left;
-    font-size: 35px;
-    height: 100%;
+    
     display: flex;
     align-items: center;
     margin-left: 4vw;
 } 
+.logo> img{
+    margin-left: 2vw;
+    height: 50px;
+    
+}
 .left{
     float: right;
     height: 100%;
@@ -39,10 +43,15 @@ li,a{
     text-decoration: none;
     font-size: 20px;
 }
-a:hover{
+
+a:hover {
     background-color: brown;
     border-radius: 7px;
 
+}
+li>a.active{
+    background-color: rgb(141, 219, 8);
+    border-radius: 7px;  
 }
 .grid{
     margin:4vw;
@@ -114,6 +123,9 @@ a:hover{
      margin-bottom: 50px;
     
 }
+.contact_heading{
+    margin-top: 20px;
+}
 .contact{
     width:400px;
     height: 200px;
@@ -130,7 +142,6 @@ a:hover{
     align-items:center;
 
 }
-
 
 .mobile_mode{
    visibility: hidden;
@@ -156,8 +167,9 @@ a:hover{
 
 .gallery_grid{
     display: grid;
-     margin-left: 30vw;
-     margin-right: 30vw;
+    margin-top: 10px;
+     margin-left: 18vw;
+     margin-right: 18vw;
      margin-bottom: 30px;
      bottom: 30px;
     grid-template-columns: repeat(4,1fr);
@@ -220,7 +232,35 @@ a:hover{
     padding: 4px;
     width:99.50%;
 }
-@media (min-width:750px) {
+@media (max-width:500px) { 
+   
+   
+    
+    .logo{ 
+       
+        margin-left: 3vw;
+         border-radius: 30px;
+        float: left;
+        
+        
+       
+        display: flex;
+        align-items: center;
+        margin-left: 4vw;
+       
+        
+    } 
+    .logo> img{
+        margin-left: 2vw;
+        height: 50px;
+        display: none;
+        border-radius: 4px solid ;
+    }
+    
+    
+    
+}
+@media (min-width:750px) { 
 
     .mobile_mode{
         visibility: visible;
@@ -247,3 +287,4 @@ a:hover{
         ;
     }
 }
+
